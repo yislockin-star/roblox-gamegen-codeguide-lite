@@ -1,0 +1,11 @@
+flowchart TD
+  A[Developer visits app] --> B[Clerk Auth Middleware]
+  B --> C[Access Generator Dashboard]
+  C --> D[Enter prompt in interface]
+  D --> E[API chat route]
+  E --> F[Construct system prompt]
+  F --> G[Send to LLM via Vercel AI SDK]
+  G --> H[Stream Lua code]
+  H --> I[Display streaming code in UI]
+  H --> J[Save final script to Supabase]
+  I --> K[Copy to clipboard]
